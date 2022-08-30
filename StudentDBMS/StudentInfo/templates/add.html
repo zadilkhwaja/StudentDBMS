@@ -1,0 +1,18 @@
+<h1>Add member</h1>
+
+<form action="addrecord/" method="post">
+{% csrf_token %}
+StudentName:<br>
+<input name="firstName">
+<br><br>
+CollegeName:<br>
+<input name="CollegeName">
+<br><br>
+    RollNo:<br>
+<input name="RollNumber">
+<br><br>
+    Language:<br>
+<input name="Skill">
+<br><br>
+<input type="submit" value="Submit">
+</form>

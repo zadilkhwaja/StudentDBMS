@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1> Student Data </h1>
+</head>
+<body>
+<div>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>StudentName</th>
+            <th>CollegeName</th>
+            <th>RollNo</th>
+            <th>Language</th>
+        </tr>
+        </thead>
+        <tbody>
+         {% for i in q %}
+         <tr>
+             <td>{{i.StudentName}}</td>
+             <td>{{i.CollegeName}}</td>
+             <td>{{i.RollNo}}</td>
+             <td>{{i.Language}}</td>
+         {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+
+<p>
+<a href="add/">Add member</a>
+</p>
+
+</body>
+</html>
